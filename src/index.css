@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply text-light-primary bg-gradient-to-br  from-light-primary via-light-secondary to-light-tertiary transition-colors duration-300 dark:text-dark-primary dark:bg-gradient-to-br dark:from-dark-primary dark:via-dark-secondary dark:to-dark-tertiary min-h-screen;
+    font-family: 'Geist', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Geist', sans-serif;
+  }
+}
+
+
+
+/* Component Styles */
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-opacity-20;
+  }
+
+  .glass-light {
+    @apply glass bg-white/20;
+  }
+
+  .glass-dark {
+    @apply glass bg-black/20;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 0rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: theme('colors.gray.200');
+}
+
+::-webkit-scrollbar-track:dark {
+  background-color: theme('colors.gray.800');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.accent.DEFAULT');
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:dark {
+  background-color: theme('colors.accent.light');
+}
+
+.spline-attribution {
+  display: none !important;
+}
