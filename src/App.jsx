@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -8,10 +9,9 @@ import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-
 function App() {
   return (
-    <Router>
+    <Router> {/* Using HashRouter */}
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <AnimatePresence mode="wait">
@@ -25,7 +25,7 @@ function App() {
         </AnimatePresence>
         <Footer />
         <img 
-          src="./bgthree.jpg"  
+          src="./bgthree.jpg" 
           className='fixed w-[100vw] h-[100vh] z-[-1] opacity-[20%] dark:invert-[100%] bg-cover object-cover' 
           style={{ minHeight: '100%' }} 
           alt="" 
