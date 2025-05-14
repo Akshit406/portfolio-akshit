@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
-import LoadingScreen from '../components/LoadingScreen';
+;
 import ProjectCard from '../components/ProjectCard';
 import SkillCarousel from '../components/SkillCarousel';
 import WorkExperience from '../components/WorkExperience';
