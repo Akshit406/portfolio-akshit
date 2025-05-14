@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router> {/* Using HashRouter */}
+    <Router basename="/"> 
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <AnimatePresence mode="wait">
