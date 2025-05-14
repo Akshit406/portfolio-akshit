@@ -24,6 +24,12 @@ function App() {
           </Routes>
         </AnimatePresence>
         <Footer />
+        <img 
+          src="./bgthree.jpg"  
+          className='fixed w-[100vw] h-[100vh] z-[-1] opacity-[20%] dark:invert-[100%] bg-cover object-cover' 
+          style={{ minHeight: '100%' }} 
+          alt="" 
+        />
       </div>
     </Router>
   );

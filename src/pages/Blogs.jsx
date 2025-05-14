@@ -33,7 +33,7 @@ const blogs = [
     id: 4,
     title: "CSS Architecture for Scale",
     excerpt: "How we implemented a maintainable CSS architecture for our design system at Blockdudes.",
-    image: "https://picsum.photos/800/600s",
+    image: "https://picsum.photos/800/600",
     date: "February 22, 2024",
     readTime: "10 min read",
     tags: ["CSS", "Design Systems", "Frontend"]
@@ -51,7 +51,7 @@ const blogs = [
     id: 6,
     title: "DevOps for Small Teams",
     excerpt: "Implementing CI/CD pipelines on a budget with GitHub Actions and Docker.",
-    image: "https://picsum.photos/800/600s",
+    image: "https://picsum.photos/800/600",
     date: "December 18, 2023",
     readTime: "9 min read",
     tags: ["DevOps", "CI/CD", "Docker"]
@@ -64,9 +64,9 @@ const Blogs = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-16 pb-20 md:pb-16 px-4"
+      className="pt-16 pb-20  md:pb-16 px-4"
     >
-      <div className="container mx-auto py-12">
+      <div className="container pt-0 mx-auto sm:py-12">
         <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary">
           My Blog
         </h1>
@@ -78,8 +78,11 @@ const Blogs = () => {
           {blogs.map((blog) => (
             <motion.div
               key={blog.id}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: blog.id * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-white dark:bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-[1px] border-opacity-[40%] border-gray-600 dark:border-gray-700"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -119,11 +122,7 @@ const Blogs = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="px-6 py-3 rounded-full bg-accent-light dark:bg-accent-dark text-white font-medium hover:opacity-90 transition-opacity">
-            View All Articles
-          </button>
-        </div>
+        
       </div>
     </motion.div>
   );

@@ -8,7 +8,7 @@
 /* Base Styles */
 @layer base {
   body {
-    @apply text-light-primary bg-gradient-to-br  from-light-primary via-light-secondary to-light-tertiary transition-colors duration-300 dark:text-dark-primary dark:bg-gradient-to-br dark:from-dark-primary dark:via-dark-secondary dark:to-dark-tertiary min-h-screen;
+    @apply text-light-primary bg-gradient-to-bl  from-light-primary via-light-secondary to-light-tertiary transition-colors duration-300 dark:text-dark-primary dark:bg-gradient-to-br dark:from-dark-primary dark:via-dark-secondary dark:to-dark-tertiary min-h-screen;
     font-family: 'Geist', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {

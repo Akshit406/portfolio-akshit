@@ -77,17 +77,17 @@ const Home = () => {
       >
         {/* Hero Section */}
         <section className="container mx-auto px-8 py-12 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
-          <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0">
+          <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 lg:ml-[40px]">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary">
               Building seamless digital experiences and forging trust in decentralized systems
             </h2>
-            <p className="text-lg md:text-xl font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary">
+            <p className="text-md md:text-lg font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary">
               Hey! I'm Akshit Saxena—Full-Stack Web Developer, DApp Builder, and Python Enthusiast. I craft seamless web experiences and trust-driven decentralized systems, blending creativity, efficiency, and cutting-edge tech to solve real-world challenges. 🚀
             </p>
           </motion.div>
           <motion.div
             variants={scaleFade}
-            className="md:w-1/2 h-100 w-[100vw] sm:h-[40vh] mt-0 md:h-96"
+            className="md:w-1/2 h-100 w-[100vw] sm:h-60 h-[40vh] mt-0 md:h-96 lg:ml-[-50px] "
           >
             <Spline scene="https://prod.spline.design/r0v2dxnLnPogbbRY/scene.splinecode" />
           </motion.div>
@@ -131,7 +131,7 @@ const Home = () => {
             >
               Skills
             </motion.h2>
-            <motion.div variants={fadeInLeft} className="glass p-6">
+            <motion.div variants={fadeInLeft} className=" p-6">
               <SkillCarousel />
             </motion.div>
           </div>

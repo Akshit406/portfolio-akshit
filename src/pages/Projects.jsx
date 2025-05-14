@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Smart Home Controller",
     description: "Mobile app for managing IoT devices with voice control integration and automation scenarios.",
-    image: "hhttps://picsum.photos/600/400",
+    image: "https://picsum.photos/600/400",
     category: "Mobile",
     technologies: ["React Native", "Firebase", "MQTT", "AWS IoT"],
     githubUrl: "#",
@@ -66,7 +66,7 @@ const Projects = () => {
       exit={{ opacity: 0 }}
       className="pt-16 pb-20 md:pb-16 px-4"
     >
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto pt-0 sm:py-12">
         <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary">
           My Projects
         </h1>
@@ -84,11 +84,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="px-6 py-3 rounded-full bg-accent-light dark:bg-accent-dark text-white font-medium hover:opacity-90 transition-opacity">
-            Load More Projects
-          </button>
-        </div>
+        
       </div>
     </motion.div>
   );

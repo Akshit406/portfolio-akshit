@@ -6,9 +6,9 @@ const ProjectCard = ({ project, delay }) => {
     <motion.div
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay }}
+      transition={{ duration: 0.5, delay }}
       whileHover={{ y: -5 }}
-      className="bg-white glass dark:bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-gray-900 transition-shadow"
+      className="bg-white glass dark:bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-gray/20 transition-shadow border-[1px] border-opacity-[40%] border-gray-600 dark:border-gray-700"
     >
       <div className="relative h-48 overflow-hidden">
         <img
@@ -23,7 +23,7 @@ const ProjectCard = ({ project, delay }) => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white/10 backdrop-blur-md hover:bg-accent-light dark:hover:bg-accent-dark transition-colors"
           >
-            <FiGithub className="w-5 h-5 text-white" />
+            <FiGithub className="w-5 h-5 text-gray-500" />
           </a>
           <a
             href={project.liveUrl}
@@ -31,7 +31,7 @@ const ProjectCard = ({ project, delay }) => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white/10 backdrop-blur-md hover:bg-accent-light dark:hover:bg-accent-dark transition-colors"
           >
-            <FiExternalLink className="w-5 h-5 text-white" />
+            <FiExternalLink className="w-5 h-5 text-gray-500" />
           </a>
         </div>
       </div>
