@@ -89,7 +89,7 @@ const Home = () => {
             variants={scaleFade}
             className="md:w-1/2 h-100 w-[100vw] sm:h-60 h-[40vh] mt-0 md:h-96 lg:ml-[-50px] "
           >
-            <Spline scene="https://prod.spline.design/r0v2dxnLnPogbbRY/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/0erkG-3gTYNx5p7d/scene.splinecode" />
           </motion.div>
         </section>
 
