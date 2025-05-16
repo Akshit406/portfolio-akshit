@@ -77,7 +77,7 @@ const Home = () => {
       >
         {/* Hero Section */}
         <section className="container mx-auto px-8 py-12 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
-          <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 lg:ml-[40px]">
+          <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 ">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary">
               Building seamless digital experiences and forging trust in decentralized systems
             </h2>
@@ -87,7 +87,7 @@ const Home = () => {
           </motion.div>
           <motion.div
             variants={scaleFade}
-            className="md:w-1/2 h-100 w-[100vw] sm:h-60 h-[40vh] mt-0 md:h-96 lg:ml-[-50px] "
+            className="md:w-1/2 h-100 w-[100vw] sm:h-60 h-[40vh] mt-0 md:h-96  "
           >
             <Spline scene="https://prod.spline.design/0erkG-3gTYNx5p7d/scene.splinecode" />
           </motion.div>
