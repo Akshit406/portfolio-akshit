@@ -6,7 +6,7 @@ const DarkModeToggle = () => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('darkMode') === 'true';
     }
-    return false;
+    return true;
   });
 
   useEffect(() => {
