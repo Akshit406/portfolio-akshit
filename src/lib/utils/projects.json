@@ -1,0 +1,39 @@
+[
+  {
+    "title": "PharmaCheck",
+    "description": "An intelligent pharmacy assistant providing accurate medicine information and real-time price comparisons from trusted, FDA-approved sources.",
+    "image": "./projects/pharmacheck.png",
+    "category": "Web App",
+    "technologies": ["AI", "Data Scraping", "API Integration", "React", "Node.js"],
+    "githubUrl": "https://github.com/Akshit406/pharmaCheck",
+    "liveUrl": "https://pharma-check-alpha.vercel.app/landing"
+  },    
+
+  {
+    "title": "TruChain",
+    "description": "A decentralized Ethereum blockchain-based system for transparent supply chain tracking.",
+    "image": "./projects/truchain.png",
+    "category": "Web3",
+    "technologies": ["Solidity", "React.js", "HardHat", "Ganache" ,"Truffle", "Ganache", "Ethers.js", "Web3.js", "Tailwind CSS 3"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "title": "E-commerce Analytics",
+    "description": "Real-time sales analytics platform with predictive modeling for inventory management.",
+    "image": "https://picsum.photos/600/400",
+    "category": "Data",
+    "technologies": ["Python", "Pandas", "Tableau", "PostgreSQL"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "title": "AR Furniture Preview",
+    "description": "Augmented reality application that lets users visualize furniture in their space before purchasing.",
+    "image": "https://picsum.photos/600/400",
+    "category": "AR",
+    "technologies": ["Unity", "ARKit", "Swift", "Firebase"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  }
+]
