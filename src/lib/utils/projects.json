@@ -1,39 +1,74 @@
 [
   {
     "title": "PharmaCheck",
-    "description": "An intelligent pharmacy assistant providing accurate medicine information and real-time price comparisons from trusted, FDA-approved sources.",
+    "description": "An intelligent pharmacy assistant that delivers accurate medicine details and real-time price comparisons from FDA-approved sources.",
     "image": "./projects/pharmacheck.png",
     "category": "Web App",
     "technologies": ["AI", "Data Scraping", "API Integration", "React", "Node.js"],
     "githubUrl": "https://github.com/Akshit406/pharmaCheck",
     "liveUrl": "https://pharma-check-alpha.vercel.app/landing"
   },    
-
   {
     "title": "TruChain",
-    "description": "A decentralized Ethereum blockchain-based system for transparent supply chain tracking.",
+    "description": "A decentralized Ethereum-based system designed for transparent and tamper-proof supply chain tracking.",
     "image": "./projects/truchain.png",
     "category": "Web3",
-    "technologies": ["Solidity", "React.js", "HardHat", "Ganache" ,"Truffle", "Ganache", "Ethers.js", "Web3.js", "Tailwind CSS 3"],
-    "githubUrl": "#",
+    "technologies": ["Solidity", "React.js", "HardHat", "Ganache", "Truffle", "Ethers.js", "Web3.js", "Tailwind CSS 3"],
+    "githubUrl": "https://github.com/Akshit406/TruChain",
     "liveUrl": "#"
   },
   {
-    "title": "E-commerce Analytics",
-    "description": "Real-time sales analytics platform with predictive modeling for inventory management.",
-    "image": "https://picsum.photos/600/400",
-    "category": "Data",
-    "technologies": ["Python", "Pandas", "Tableau", "PostgreSQL"],
-    "githubUrl": "#",
+    "title": "DeBlogger",
+    "description": "A decentralized blogging platform deployed on Ethereum's Sepolia testnet, enabling censorship-resistant publishing.",
+    "image": "./projects/deblogger.png",
+    "category": "Web3",
+    "technologies": ["Solidity", "Hardhat", "Ethers.js", "React", "Tailwind CSS", "Vite"],
+    "githubUrl": "https://github.com/Akshit406/DeBlogger",
+    "liveUrl": "https://de-blogger.vercel.app"
+  },
+  {
+    "title": "MintPod",
+    "description": "An in-browser NFT deployment tool using ERC-721 and MetaMask, allowing users to mint and launch NFT collections effortlessly.",
+    "image": "./projects/mintpod.png",
+    "category": "Web3",
+    "technologies": ["ERC 721", "IPFS", "Pinata", "Solidity", "Ethers.js", "React.js"],
+    "githubUrl": "https://github.com/Akshit406/MintPod",
     "liveUrl": "#"
   },
   {
-    "title": "AR Furniture Preview",
-    "description": "Augmented reality application that lets users visualize furniture in their space before purchasing.",
-    "image": "https://picsum.photos/600/400",
-    "category": "AR",
-    "technologies": ["Unity", "ARKit", "Swift", "Firebase"],
-    "githubUrl": "#",
+    "title": "HisabPro",
+    "description": "An all-in-one web app for inventory, sales, and analytics management tailored for small businesses.",
+    "image": "./projects/hisabpro.png",
+    "category": "Web App",
+    "technologies": ["React.js", "Tailwind CSS 3", "MongoDB", "Express.js", "Inventory", "Stocks"],
+    "githubUrl": "https://github.com/Akshit406/HisabPro",
     "liveUrl": "#"
+  },
+  {
+    "title": "E-Wallet",
+    "description": "A lightweight Chrome extension wallet for Ethereum (Sepolia Testnet), built with React and Vite for seamless crypto management.",
+    "image": "./projects/ewallet.png",
+    "category": "Web3",
+    "technologies": ["React.js", "Youtube api", "HTML 5", "CSS"],
+    "githubUrl": "https://github.com/Akshit406/FlickTube",
+    "liveUrl": "https://flick-tube.vercel.app"
+  },
+  {
+    "title": "RayTracer",
+    "description": "A basic raytracer built entirely in Python, showcasing light physics with reflections, refractions, and shadows.",
+    "image": "./projects/raytracer.png",
+    "category": "Python",
+    "technologies": ["Python", "Pillow", "Physics engine", "Reflection", "Refraction"],
+    "githubUrl": "https://github.com/Akshit406/raytracer",
+    "liveUrl": "#"
+  },
+  {
+    "title": "FlickTube",
+    "description": "A responsive YouTube clone built with React.js and YouTube v3 API, offering dynamic search and video playback.",
+    "image": "./projects/flicktube.png",
+    "category": "Web App",
+    "technologies": ["React.js", "YouTube API", "HTML 5", "CSS"],
+    "githubUrl": "https://github.com/Akshit406/FlickTube",
+    "liveUrl": "https://flick-tube.vercel.app"
   }
 ]
