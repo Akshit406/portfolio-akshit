@@ -1,62 +1,6 @@
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
-
-const projects = [
-  {
-    title: "Decentralized Art Marketplace",
-    description: "A blockchain-based platform for artists to mint and sell digital artwork as NFTs with royalty tracking.",
-    image: "https://picsum.photos/600/400",
-    category: "Web3",
-    technologies: ["Solidity", "React", "IPFS", "Hardhat"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "AI Content Moderator",
-    description: "Machine learning system that automatically filters inappropriate content using natural language processing.",
-    image: "https://picsum.photos/600/400",
-    category: "AI",
-    technologies: ["Python", "TensorFlow", "Flask", "NLTK"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Health Tracker Dashboard",
-    description: "Interactive dashboard for tracking fitness metrics with data visualization and personalized recommendations.",
-    image: "https://picsum.photos/600/400",
-    category: "Web App",
-    technologies: ["React", "D3.js", "Node.js", "MongoDB"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Smart Home Controller",
-    description: "Mobile app for managing IoT devices with voice control integration and automation scenarios.",
-    image: "https://picsum.photos/600/400",
-    category: "Mobile",
-    technologies: ["React Native", "Firebase", "MQTT", "AWS IoT"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "E-commerce Analytics",
-    description: "Real-time sales analytics platform with predictive modeling for inventory management.",
-    image: "https://picsum.photos/600/400",
-    category: "Data",
-    technologies: ["Python", "Pandas", "Tableau", "PostgreSQL"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "AR Furniture Preview",
-    description: "Augmented reality application that lets users visualize furniture in their space before purchasing.",
-    image: "https://picsum.photos/600/400",
-    category: "AR",
-    technologies: ["Unity", "ARKit", "Swift", "Firebase"],
-    githubUrl: "#",
-    liveUrl: "#"
-  }
-];
+import projects from '../lib/utils/projects.json'
 
 const Projects = () => {
   return (
