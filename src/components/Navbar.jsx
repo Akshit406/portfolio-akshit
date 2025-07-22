@@ -42,19 +42,16 @@ const Navbar = () => {
           </Link>
           <div className="h-6 w-px bg-gray-300 dark:bg-gray-700"></div> 
           <Link to="/projects" className="flex items-center gap-2 text-dark-primary dark:text-light-primary hover:text-accent-dark dark:hover:text-accent-light transition-colors font-bold">
-            {/* Example Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             Projects
           </Link>
           <div className="h-6 w-px bg-gray-300 dark:bg-gray-700"></div>
           <Link to="/blogs" className="flex items-center gap-2 text-dark-primary dark:text-light-primary hover:text-accent-dark dark:hover:text-accent-light transition-colors font-bold">
-            {/* Example Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-book"><path d="M4 19.5v-15A3.5 3.5 0 0 1 7.5 1H20v22H7.5a3.5 3.5 0 0 1 0-7H4z"></path></svg>
             Blogs
           </Link>
           <div className="h-6 w-px bg-gray-300 dark:bg-gray-700"></div>
           <Link to="/gallery" className="flex items-center gap-2 text-dark-primary dark:text-light-primary hover:text-accent-dark dark:hover:text-accent-light transition-colors font-bold">
-            {/* Example Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-image"><rect width="22" height="16" x="1" y="4" rx="3" ry="3"></rect><path d="M3 10h18"></path><path d="M8 15a6 6 0 0 1 6-6"></path></svg>
             Gallery
           </Link>
