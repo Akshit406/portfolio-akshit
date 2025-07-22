@@ -11,23 +11,27 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router basename="/"> 
-      <div className="min-h-screen flex flex-col">
+    <Router basename="/">
+      <div className="flex flex-col min-h-screen relative z-0">
         <Navbar />
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/gallery" element={<Gallery />} />
-          </Routes>
-        </AnimatePresence>
+        
+        <main className="flex-grow">
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/gallery" element={<Gallery />} />
+            </Routes>
+          </AnimatePresence>
+        </main>
+
         <Footer />
+
         <img 
           src="./bgthree.jpg" 
-          className='fixed w-[100vw] h-[100vh] z-[-1] opacity-[20%] dark:invert-[100%] bg-cover object-cover' 
-          style={{ minHeight: '100%' }} 
+          className="fixed top-0 left-0 w-[100vw] h-[100vh] z-[-1] opacity-[20%] dark:invert bg-cover object-cover" 
           alt="" 
         />
       </div>
