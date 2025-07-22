@@ -18,41 +18,32 @@ const ProjectCard = ({ project, delay }) => {
           alt={project.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-4 right-4 flex gap-2 z-20"> 
+        <div className="absolute top-4 right-4 flex gap-2 z-20">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-gray-100 border border-solid border-gray-300 backdrop-blur-md hover:bg-accent-light dark:hover:bg-accent-dark transition-colors"
+              className="p-2 rounded-full bg-white/90 border border-gray-400 hover:bg-purple-100 hover:scale-105 transition-transform duration-300 shadow-md"
               title="View on GitHub"
             >
-              <FiGithub className="w-5 h-5 text-gray-500" />
+              <FiGithub className="w-5 h-5 text-black" />
             </a>
           )}
 
-          {hasLiveUrl ? (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/50 border border-solid border-gray-300 backdrop-blur-md hover:bg-accent-light dark:hover:bg-accent-dark transition-colors"
-              title="View Live Demo"
-            >
-              <FiExternalLink className="w-5 h-5 text-gray-500" />
-            </a>
-          ) : (
-            <span
-              className="p-2 rounded-full bg-white/30 backdrop-blur-md transition-colors cursor-not-allowed relative group"
-              title="Work in progress"
-            >
-              <FiExternalLink className="w-5 h-5 text-gray-500" />
-              <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-30">
-                Work in Progress
-              </span>
-            </span>
-          )}
+          <a
+            href={hasLiveUrl ? project.liveUrl : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`p-2 rounded-full ${
+              hasLiveUrl ? 'bg-white/90 hover:bg-green-100' : 'bg-gray-300 cursor-not-allowed'
+            } border border-gray-400 hover:scale-105 transition-transform duration-300 shadow-md`}
+            title={hasLiveUrl ? "View Live Demo" : "Work in Progress"}
+          >
+            <FiExternalLink className="w-5 h-5 text-black" />
+          </a>
         </div>
+
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold mb-2 text-dark-primary dark:text-light-primary">
