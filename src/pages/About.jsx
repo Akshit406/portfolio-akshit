@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { FiAward, FiCode, FiCpu, FiDatabase, FiLayers } from 'react-icons/fi';
+import { FiAward, FiCode, FiCpu, FiDatabase, FiLayers } from 'react-icons/fi'; 
 
 const skills = [
   { name: "Frontend Development", level: 90, icon: <FiLayers className="w-6 h-6" /> },
   { name: "Backend Development", level: 95, icon: <FiDatabase className="w-6 h-6" /> },
   { name: "Blockchain/Smart Contracts", level: 80, icon: <FiCode className="w-6 h-6" /> },
-  { name: "UI/UX Design", level: 75, icon: <FiCpu className="w-6 h-6" /> },
-  
+  { name: "UI/UX Design", level: 75, icon: <FiCpu className="w-6 h-6" /> }, 
 ];
 
 const About = () => {
@@ -19,22 +18,21 @@ const About = () => {
     >
       <div className="container mx-auto pt-0 sm:py-12">
         <div className="flex flex-col lg:flex-row gap-12">
+
+       
           <div className="lg:w-1/2">
             <h1 className="text-4xl font-bold mb-6 text-dark-primary dark:text-light-primary">
               About Me
             </h1>
             <div className="space-y-6 text-dark-secondary dark:text-light-secondary">
-              <p className="text-lg">
-                Hello! I'm Akshit Saxena, a Full-Stack Developer specializing in building exceptional digital experiences and decentralized applications.
+              <p className="text-base">
+                I'm a highly motivated and results-oriented Full-Stack Developer with a passion for architecting and implementing robust, user-centric web applications, including advanced decentralized applications (DApps). My expertise lies in translating complex requirements into elegant, efficient, and scalable solutions.
               </p>
-              <p>
-                With over 3 years of experience in web development, I've worked with startups and established companies to build scalable, performant applications that users love.
+              <p className="text-base">
+                My comprehensive technical skill set encompasses the MERN stack (MongoDB, Express.js, React, Node.js), complemented by foundational knowledge of Redis for data handling. I am adept in multiple programming languages, including JavaScript, Python, Java, and C Language, enabling me to navigate diverse development environments and frameworks. Furthermore, I possess in-depth knowledge of blockchain technologies, specifically Solidity for smart contract development and Hardhat for efficient DApp development and testing.
               </p>
-              <p>
-                My journey in tech began when I built my first website at 16. Since then, I've immersed myself in everything from React ecosystems to smart contract development on Ethereum.
-              </p>
-              <p>
-                When I'm not coding, you'll find me contributing to open-source projects, writing technical articles, or exploring new technologies in the Web3 space.
+              <p className="text-base">
+                Beyond my strong technical foundation, I bring a keen eye for design and user experience to my development work. Proficient in Adobe Illustrator and Figma, I excel at creating intuitive and aesthetically pleasing user interfaces. This blend of technical proficiency and design sensibility allows me to deliver holistic solutions that are not only functionally superior but also visually compelling and user-friendly, ensuring a seamless and engaging digital experience.
               </p>
             </div>
 
@@ -42,80 +40,115 @@ const About = () => {
               <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary">
                 My Skills
               </h2>
-              <div className="space-y-4">
-                {skills.map((skill, index) => (
-                  <div key={index}>
-                    <div className="flex items-center mb-1">
-                      <span className="mr-3 text-accent-light dark:text-accent-dark">
-                        {skill.icon}
-                      </span>
-                      <span className="font-medium text-dark-primary dark:text-light-primary">
-                        {skill.name}
-                      </span>
-                      <span className="ml-auto text-sm text-gray-500 dark:text-gray-400">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-400 dark:bg-gray-700 rounded-full h-2.5">
-                      <div
-                        className="bg-accent-dark dark:bg-accent-light h-2.5 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+              <div className="space-y-4 text-dark-secondary dark:text-light-secondary">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Programming Languages:</h3>
+                  <p className="text-base">JavaScript, Python, Solidity, Java, C Language</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Web Technologies:</h3>
+                  <p className="text-base">HTML/CSS, React.js, Node.js, Express.js</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Databases & Data Stores:</h3>
+                  <p className="text-base">MongoDB, Redis</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Blockchain:</h3>
+                  <p className="text-base">Hardhat, Blockchain Technologies</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Tools & Version Control:</h3>
+                  <p className="text-base">Git, GitHub, VS Code</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Soft Skills:</h3>
+                  <p className="text-base">Problem-Solving, Teamwork/Collaboration, Communication Skills</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Design Tools:</h3>
+                  <p className="text-base">Adobe Illustrator, Figma</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="lg:w-1/2 " >
-            <div className="bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-lg border-[1px] border-opacity-[40%] border-gray-400 dark:border-gray-800">
+      
+          <div className="lg:w-1/2">
+            <div className="bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-xl mb-8"> 
+             
+              <div className="flex justify-center mb-6">
+                <img
+                  src="./AkshitPFP.png" 
+                  alt="Akshit Saxena"
+                  className="w-80 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+
+              {/* Resume Button */}
+              <a
+              href='#'
+                className="px-6 py-3 rounded-full bg-accent-dark dark:bg-accent-light text-white dark:text-black font-medium hover:opacity-90 transition-opacity flex items-center justify-center mb-4"
+              >
+                <FiAward className="mr-2" /> Resume
+              </a>
+
+              {/* Contact Details */}
+              <div className="space-y-2 text-dark-secondary dark:text-light-secondary text-sm">
+                <p className="flex items-center">
+                  <span className="mr-2 text-accent-light dark:text-accent-dark">📞</span>
+                  <a href="tel:+919599434696" className="hover:underline">+91 9599434696</a>
+                </p>
+                <p className="flex items-center">
+                  <span className="mr-2 text-accent-light dark:text-accent-dark">📧</span>
+                  <a href="mailto:akshitsaxena450@gmail.com" className="hover:underline">akshitsaxena450@gmail.com</a>
+                </p>
+                <p className="flex items-center">
+                  <span className="mr-2 text-accent-light dark:text-accent-dark">📍</span>
+                  Faridabad, India
+                </p>
+              
+              </div>
+            </div>
+
+            {/* Professional Timeline */}
+            <div className="bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-xl"> 
               <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary">
                 Professional Timeline
               </h2>
               <div className="space-y-8 ">
-                
-               
-                <div className="relative pl-8 border-l-2 border-gray-200 dark:border-gray-600">
-                  <div className="absolute -left-2.5 top-0 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-500"></div>
+                {/* Sahas Internship */}
+                <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-700"> 
+                  <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-accent-dark dark:bg-accent-light flex items-center justify-center text-white text-xs font-bold"></div> 
                   <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary">
-                    Full Stack Developer @ Blockdudes
+                    Python Developer @ Sahas
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                    Dec 2023 - Present
+                    June 2025 - Present (Faridabad, India - Remote)
                   </p>
-                  <p className="text-dark-secondary dark:text-light-secondary">
-                    Led frontend architecture decisions, implemented Web3 integrations, and mentored junior developers.
-                  </p>
+                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary space-y-1 text-sm">
+                    <li>Developed an automated phone call system for an NGO, facilitating monthly pre-recorded reminders to over 10,000 migrant workers.</li>
+                    <li>Engineered the system using PostgreSQL for data, AWS Lambda for call logic, micro EC2 for database hosting, and Twilio API for call functionality.</li>
+                  </ul>
                 </div>
 
-                <div className="relative pl-8 border-l-2 border-gray-200 dark:border-gray-600">
-                  <div className="absolute -left-2.5 top-0 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-500"></div>
+                {/* Blockdudes Internship */}
+                <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-700"> 
+                  <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-accent-dark dark:bg-accent-light flex items-center justify-center text-white text-xs font-bold"></div> 
                   <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary">
-                    Freelance Web Developer
+                    Fullstack Developer @ Blockdudes
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                    Jan 2022 - Nov 2023
+                    September 2023 - February 2024 (Faridabad, India)
                   </p>
-                  <p className="text-dark-secondary dark:text-light-secondary">
-                    Built custom solutions for clients across industries, from e-commerce platforms to SaaS applications.
-                  </p>
+                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary space-y-1 text-sm">
+                    <li>Contributed to the full-stack development of decentralized applications (DApps), integrating both frontend and backend components.</li>
+                    <li>Implemented and deployed secure smart contracts utilizing Solidity and Hardhat.</li>
+                    <li>Built scalable web application features using the MERN stack (MongoDB, Express.js, React, Node.js).</li>
+                    <li>Enhanced user experience by seamlessly integrating blockchain functionalities with web interfaces.</li>
+                  </ul>
                 </div>
-
-                
               </div>
-            </div>
-
-            <div className="mt-8 bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-lg border-[1px] border-opacity-[40%] border-gray-400 dark:border-gray-800">
-              <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary">
-                Get In Touch
-              </h2>
-              <p className="mb-6 text-dark-secondary dark:text-light-secondary">
-                Interested in working together or have questions about my work? I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-              </p>
-              <button className="px-6 py-3 rounded-full bg-accent-dark dark:bg-accent-light text-white dark:text-black font-medium hover:opacity-90 transition-opacity">
-                Contact Me
-              </button>
             </div>
           </div>
         </div>
