@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
-;
 import ProjectCard from '../components/ProjectCard';
 import SkillCarousel from '../components/SkillCarousel';
 import WorkExperience from '../components/WorkExperience';
+import { useNavigate } from 'react-router-dom';
 
 const containerVariants = {
   hidden: {},
@@ -27,6 +27,7 @@ const scaleFade = {
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,37 +39,36 @@ const Home = () => {
 
   const projects = [
     {
-    title: "Decentralized Art Marketplace",
-    description: "A blockchain-based platform for artists to mint and sell digital artwork as NFTs with royalty tracking.",
-    image: "https://picsum.photos/600/400",
-    category: "Web3",
-    technologies: ["Solidity", "React", "IPFS", "Hardhat"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "AI Content Moderator",
-    description: "Machine learning system that automatically filters inappropriate content using natural language processing.",
-    image: "https://picsum.photos/600/400",
-    category: "AI",
-    technologies: ["Python", "TensorFlow", "Flask", "NLTK"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Health Tracker Dashboard",
-    description: "Interactive dashboard for tracking fitness metrics with data visualization and personalized recommendations.",
-    image: "https://picsum.photos/600/400",
-    category: "Web App",
-    technologies: ["React", "D3.js", "Node.js", "MongoDB"],
-    githubUrl: "#",
-    liveUrl: "#"
-  }
+      title: "PharmaCheck",
+      description: "An intelligent pharmacy assistant providing accurate medicine information and real-time price comparisons from trusted, FDA-approved sources",
+      image: "./projects/pharmacheck.png",
+      category: "Web App",
+      technologies: ["AI", "Data Scraping", "API Integration", "React", "Node.js"],
+      githubUrl: "https://github.com/Akshit406/pharmaCheck",
+      liveUrl: "https://pharma-check-alpha.vercel.app/landing"
+    },
+    {
+      title: "TruChain",
+      description: "A decentralized Ethereum blockchain-based system for transparent supply chain tracking from manufacturers to retailers",
+      image: "./projects/truchain.png",
+      category: "Web3",
+      technologies: ["Solidity", "React.js", "HardHat", "Ganache" ,"Truffle", "Ganache", "Ethers.js", "Web3.js", "Tailwind CSS 3"],
+      githubUrl: "https://github.com/Akshit406/TruChain",
+      liveUrl: "#"
+    },
+    {
+      title: "MintPod",
+      description: "An NFT deployer that utilizes ERC-721 and MetaMask to let users create and launch their own NFT collections directly from the browser",
+      image: "./projects/mintpod.png",
+      category: "Web3",
+      technologies: ["ERC 721", "IPFS", "Pinata", "Solidity", "Ethers.js","React.js"],
+      githubUrl: "https://github.com/Akshit406/MintPod",
+      liveUrl: "#"
+    }
   ];
 
   return (
     <>
-      
       <motion.div
         initial="hidden"
         animate="show"
@@ -79,10 +79,10 @@ const Home = () => {
         <section className="container mx-auto px-8 py-12 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
           <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 ">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary">
-              Building seamless digital experiences and forging trust in decentralized systems
+              Full Stack Developer, Web3 Builder & Sleepless Debugger 
             </h2>
             <p className="text-md md:text-lg font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary">
-              Hey! I'm Akshit Saxena—Full-Stack Web Developer, DApp Builder, and Python Enthusiast. I craft seamless web experiences and trust-driven decentralized systems, blending creativity, efficiency, and cutting-edge tech to solve real-world challenges. 🚀
+                Akshit Saxena here — Full-Stack Developer, Web3 Technologist, and Python Builder. I architect efficient web systems and trustless DApps, turning complex challenges into intuitive, performant software.
             </p>
           </motion.div>
           <motion.div
@@ -96,7 +96,7 @@ const Home = () => {
         {/* Projects Section */}
         <motion.section variants={containerVariants} className="container md:px-4 mx-auto px-8 sm:px-6 py-12">
           <motion.h2 variants={fadeInLeft} className="text-3xl font-bold mb-8 text-center text-dark-primary dark:text-light-primary">
-            Recent Projects
+            Featured Projects
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
@@ -106,7 +106,9 @@ const Home = () => {
             ))}
           </div>
           <motion.div variants={fadeInLeft} className="text-center mt-8">
-            <button className="px-6 py-3 rounded-full bg-accent-light dark:bg-accent-dark text-black dark:text-white font-medium
+            <button 
+            onClick={() => navigate('/projects')}
+            className="px-6 py-3 rounded-full bg-accent-light dark:bg-accent-dark text-black dark:text-white font-medium
                               hover:opacity-90 transition-opacity
                               bg-white/10 backdrop-blur-md
                               border border-white/20
@@ -117,9 +119,6 @@ const Home = () => {
               View More Projects
             </button>
           </motion.div>
-
-
-
         </motion.section>
 
         {/* Skills Section */}
@@ -136,7 +135,6 @@ const Home = () => {
             </motion.div>
           </div>
         </motion.section>
-
 
         {/* Work Experience */}
         <motion.section variants={containerVariants} className="container mx-auto md:px-4 px-8 py-12">
