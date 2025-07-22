@@ -43,7 +43,10 @@ const Home = () => {
       description: "An intelligent pharmacy assistant providing accurate medicine information and real-time price comparisons from trusted, FDA-approved sources",
       image: "./projects/pharmacheck.png",
       category: "Web App",
-      technologies: ["AI", "Data Scraping", "API Integration", "React", "Node.js"],
+      technologies: [
+        "AI", "Data Scraping", "API Integration", "React", "Node.js",
+        "Express.js", "MongoDB", "Tailwind CSS", "JWT Auth", "REST API"
+      ],
       githubUrl: "https://github.com/Akshit406/pharmaCheck",
       liveUrl: "https://pharma-check-alpha.vercel.app/landing"
     },
@@ -52,7 +55,10 @@ const Home = () => {
       description: "A decentralized Ethereum blockchain-based system for transparent supply chain tracking from manufacturers to retailers",
       image: "./projects/truchain.png",
       category: "Web3",
-      technologies: ["Solidity", "React.js", "HardHat", "Ganache" ,"Truffle", "Ganache", "Ethers.js", "Web3.js", "Tailwind CSS 3"],
+      technologies: [
+        "Solidity", "React.js", "HardHat", "Ganache", "Truffle", "Ethers.js", "Web3.js",
+        "Tailwind CSS 3", "IPFS", "Blockchain", "MetaMask"
+      ],
       githubUrl: "https://github.com/Akshit406/TruChain",
       liveUrl: "#"
     },
@@ -61,7 +67,10 @@ const Home = () => {
       description: "An NFT deployer that utilizes ERC-721 and MetaMask to let users create and launch their own NFT collections directly from the browser",
       image: "./projects/mintpod.png",
       category: "Web3",
-      technologies: ["ERC 721", "IPFS", "Pinata", "Solidity", "Ethers.js","React.js"],
+      technologies: [
+        "ERC 721", "IPFS", "Pinata", "Solidity", "Ethers.js", "React.js",
+        "NFT", "MetaMask", "Smart Contracts", "Web3.js", "Tailwind CSS"
+      ],
       githubUrl: "https://github.com/Akshit406/MintPod",
       liveUrl: "#"
     }
