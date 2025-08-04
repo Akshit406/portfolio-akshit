@@ -83,7 +83,7 @@ const Home = () => {
         initial="hidden"
         animate="show"
         variants={containerVariants}
-        className="pt-0 pb-20 md:pb-16 overflow-x-hidden"
+        className="pt-20 sm:pt-0 pb-20 md:pb-16 overflow-x-hidden"
       >
         {/* Hero Section */}
         <section className="container mx-auto px-8 py-5 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
