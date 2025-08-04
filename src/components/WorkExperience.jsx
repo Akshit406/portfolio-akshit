@@ -6,16 +6,26 @@ const experiences = [
     title: 'Python Developer',
     company: 'Sahas',
     period: 'June 2025 – Present (Faridabad, India - Remote)',
-    description:
-      'Developed an automated phone call system for an NGO, facilitating monthly pre-recorded reminders to over 10,000 migrant workers. Engineered the system using PostgreSQL for data, AWS Lambda for call logic, micro EC2 for database hosting, and Twilio API for call functionality.',
+    description: (
+      <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+        <li>Built an automated calling system to deliver monthly reminders to 10,000+ migrant workers.</li>
+        <li>Used AWS Lambda and Twilio for serverless call workflows.</li>
+        <li>Managed recipient data securely via PostgreSQL hosted on a micro EC2 instance.</li>
+      </ul>
+    ),
   },
   {
     id: 2,
     title: 'Full Stack Developer',
     company: 'Blockdudes',
     period: 'September 2023 – February 2024 (Faridabad, India)',
-    description:
-      'Contributed to the full-stack development of decentralized applications (DApps), integrating both frontend and backend components. Implemented and deployed secure smart contracts utilizing Solidity and Hardhat. Built scalable web application features using the MERN stack (MongoDB, Express.js, React, Node.js). Enhanced user experience by seamlessly integrating blockchain functionalities with web interfaces.',
+    description: (
+      <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+        <li>Developed and deployed smart contracts using Solidity and Hardhat.</li>
+        <li>Built responsive React.js frontends with wallet integration via Ethers.js.</li>
+        <li>Connected IPFS-based NFT metadata to backend APIs built with Node.js + Express.</li>
+      </ul>
+    ),
   },
 ];
 
@@ -46,7 +56,7 @@ const WorkExperience = () => {
             <h3 className="text-xl font-semibold text-dark-primary dark:text-light-primary mb-1">{exp.title}</h3>
             <p className="text-accent-dark dark:text-accent-light font-medium">{exp.company}</p>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{exp.period}</p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{exp.description}</p>
+            {exp.description}
           </div>
         </motion.div>
       ))}
