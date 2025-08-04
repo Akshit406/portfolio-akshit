@@ -83,10 +83,10 @@ const Home = () => {
         initial="hidden"
         animate="show"
         variants={containerVariants}
-        className="pt-16 pb-20 md:pb-16 overflow-x-hidden"
+        className="pt-0 pb-20 md:pb-16 overflow-x-hidden"
       >
         {/* Hero Section */}
-        <section className="container mx-auto px-8 py-12 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
+        <section className="container mx-auto px-8 py-5 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
           <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 ">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary">
               Full Stack Developer, Web3 Builder & Sleepless Debugger 
@@ -105,8 +105,8 @@ const Home = () => {
                         text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white
                         transition-all duration-200"
             >
-              <FaGithub className="text-xl" />
-              <span className="text-base font-medium">GitHub</span>
+              <FaGithub className="text-md" />
+              <span className="text-sm font-medium">GitHub</span>
             </motion.a>
 
             <motion.a
@@ -118,17 +118,27 @@ const Home = () => {
                         text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white
                         transition-all duration-200"
             >
-              <FaLinkedin className="text-xl" />
-              <span className="text-base font-medium">LinkedIn</span>
+              <FaLinkedin className="text-md" />
+              <span className="text-sm font-medium">LinkedIn</span>
             </motion.a>
           </div>
           </motion.div>
-          <motion.div
-            variants={scaleFade}
-            className="md:w-1/2 w-full h-[40vh] sm:h-60 md:h-96 mt-0 "
+         <motion.div
+          variants={scaleFade}
+          className="md:w-1/2 w-full mt-0 flex justify-center items-center"
+        >
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="max-w-full h-auto"
+            style={{ aspectRatio: '1000 / 1027' }}
           >
-            <Spline scene="https://prod.spline.design/0erkG-3gTYNx5p7d/scene.splinecode" />
-          </motion.div>
+            <source src="/robotbg.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </motion.div>
         </section>
 
         {/* Projects Section */}
