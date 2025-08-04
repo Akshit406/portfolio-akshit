@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import SkillCarousel from '../components/SkillCarousel';
 import WorkExperience from '../components/WorkExperience';
 import { useNavigate } from 'react-router-dom';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const containerVariants = {
   hidden: {},
@@ -82,7 +83,7 @@ const Home = () => {
         initial="hidden"
         animate="show"
         variants={containerVariants}
-        className="pt-16 pb-20 md:pb-16"
+        className="pt-16 pb-20 md:pb-16 overflow-x-hidden"
       >
         {/* Hero Section */}
         <section className="container mx-auto px-8 py-12 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
@@ -91,12 +92,40 @@ const Home = () => {
               Full Stack Developer, Web3 Builder & Sleepless Debugger 
             </h2>
             <p className="text-md md:text-lg font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary">
-                Akshit Saxena here — Full-Stack Developer, Web3 Technologist, and Python Builder. I architect efficient web systems and trustless DApps, turning complex challenges into intuitive, performant software.
+                Hey I'm Akshit Saxena, I architect efficient web systems and trustless DApps, turning complex challenges into intuitive, performant software.
             </p>
+
+          <div className="flex gap-4 mt-4">
+            <motion.a
+              href="https://github.com/Akshit406"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-2 px-4 py-2 border border-gray-400 dark:border-gray-600 rounded-md
+                        text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white
+                        transition-all duration-200"
+            >
+              <FaGithub className="text-xl" />
+              <span className="text-base font-medium">GitHub</span>
+            </motion.a>
+
+            <motion.a
+              href="https://www.linkedin.com/in/akshit-saxena-48a496248"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-2 px-4 py-2 border border-gray-400 dark:border-gray-600 rounded-md
+                        text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white
+                        transition-all duration-200"
+            >
+              <FaLinkedin className="text-xl" />
+              <span className="text-base font-medium">LinkedIn</span>
+            </motion.a>
+          </div>
           </motion.div>
           <motion.div
             variants={scaleFade}
-            className="md:w-1/2 h-100 w-[100vw] sm:h-60 h-[40vh] mt-0 md:h-96  "
+            className="md:w-1/2 w-full h-[40vh] sm:h-60 md:h-96 mt-0 "
           >
             <Spline scene="https://prod.spline.design/0erkG-3gTYNx5p7d/scene.splinecode" />
           </motion.div>
