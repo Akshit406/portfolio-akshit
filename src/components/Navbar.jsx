@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FiUser, FiCode, FiBook, FiImage } from 'react-icons/fi';
+import { FiUser, FiCode, FiBook, FiImage, FiHome } from 'react-icons/fi';
 import DarkModeToggle from './DarkModeToggle';
 import TimeDisplay from './TimeDisplay';
 
@@ -66,8 +66,9 @@ const Navbar = () => {
         </div>
 
         {isMobile && (
-          <div className="w-[50%] mx-auto text-sm flex dark:text-white text-black justify-around bg-white dark:bg-dark-secondary bg-opacity-40 dark:bg-opacity-90 backdrop-blur-md rounded-full border border-white/20 mb-1 p-2">
+          <div className="w-[70%] mx-auto text-sm flex dark:text-white text-black justify-around bg-white dark:bg-dark-secondary bg-opacity-40 dark:bg-opacity-90 backdrop-blur-md rounded-full border border-white/20 mb-4 p-2">
             <DarkModeToggle />
+            <Link to="/" className="p-2"><FiHome className="w-4 h-4" /></Link>
             <Link to="/about" className="p-2"><FiUser className="w-4 h-4" /></Link>
             <Link to="/projects" className="p-2"><FiCode className="w-4 h-4" /></Link>
             <Link to="/blogs" className="p-2"><FiBook className="w-4 h-4" /></Link>
