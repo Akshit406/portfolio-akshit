@@ -45,6 +45,15 @@
     "liveUrl": "#"
   },
   {
+    "title": "Samachar",
+    "description": "A real-time Discord bot that delivers bite-sized news headlines from Inshorts with interactive navigation",
+    "image": "./projects/samachar.png",
+    "category": "Bot",
+    "technologies": ["Discord.js", "Uptime", "Javascript", "News Api"],
+    "githubUrl": "https://github.com/Akshit406/Samachar",
+    "liveUrl": "https://top.gg/bot/1400835855152578681"
+  },
+  {
     "title": "E-Wallet",
     "description": "A lightweight Chrome extension wallet for Ethereum (Sepolia Testnet), built with React and Vite for seamless crypto management.",
     "image": "./projects/ewallet.png",
