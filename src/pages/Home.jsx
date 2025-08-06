@@ -5,7 +5,8 @@ import ProjectCard from '../components/ProjectCard';
 import SkillCarousel from '../components/SkillCarousel';
 import WorkExperience from '../components/WorkExperience';
 import { useNavigate } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaAward, FaDochub, FaGithub, FaLinkedin, FaRProject } from 'react-icons/fa';
+import { FaDiagramSuccessor } from 'react-icons/fa6';
 
 const containerVariants = {
   hidden: {},
@@ -120,6 +121,19 @@ const Home = () => {
             >
               <FaLinkedin className="text-md" />
               <span className="text-sm font-medium">LinkedIn</span>
+            </motion.a>
+
+            <motion.a
+              href="https://docs.google.com/document/d/1GfL8exO21MPB2Og2uUSsP5dB1t1941iv/edit?usp=sharing&ouid=105960646403903531778&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-2 px-4 py-2 border border-gray-400 dark:border-gray-600 rounded-md
+                        text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white
+                        transition-all duration-200"
+            >
+              <FaAward className="text-md" />
+              <span className="text-sm font-medium">Resume</span>
             </motion.a>
           </div>
           </motion.div>

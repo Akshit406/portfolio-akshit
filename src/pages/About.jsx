@@ -29,7 +29,7 @@ const About = () => {
                 I'm a highly motivated and results-oriented Full-Stack Developer with a passion for architecting and implementing robust, user-centric web applications, including advanced decentralized applications (DApps). My expertise lies in translating complex requirements into elegant, efficient, and scalable solutions.
               </p>
               <p className="text-base">
-                My comprehensive technical skill set encompasses the MERN stack (MongoDB, Express.js, React, Node.js), complemented by foundational knowledge of Redis for data handling. I am adept in multiple programming languages, including JavaScript, Python, Java, and C Language, enabling me to navigate diverse development environments and frameworks. Furthermore, I possess in-depth knowledge of blockchain technologies, specifically Solidity for smart contract development and Hardhat for efficient DApp development and testing.
+                My comprehensive technical skill set encompasses the MERN stack (MongoDB, Express.js, React, Node.js), complemented by foundational knowledge of Redis for data handling. I am adept in multiple programming languages, including JavaScript, Python, Java, and C++ Language, enabling me to navigate diverse development environments and frameworks. Furthermore, I possess in-depth knowledge of blockchain technologies, specifically Solidity for smart contract development and Hardhat for efficient DApp development and testing.
               </p>
               <p className="text-base">
                 Beyond my strong technical foundation, I bring a keen eye for design and user experience to my development work. Proficient in Adobe Illustrator and Figma, I excel at creating intuitive and aesthetically pleasing user interfaces. This blend of technical proficiency and design sensibility allows me to deliver holistic solutions that are not only functionally superior but also visually compelling and user-friendly, ensuring a seamless and engaging digital experience.
@@ -87,7 +87,7 @@ const About = () => {
 
               {/* Resume Button */}
               <a
-              href='#'
+              href='https://docs.google.com/document/d/1GfL8exO21MPB2Og2uUSsP5dB1t1941iv/edit?usp=sharing&ouid=105960646403903531778&rtpof=true&sd=true'
                 className="px-6 py-3 rounded-full bg-accent-dark dark:bg-accent-light text-white dark:text-black font-medium hover:opacity-90 transition-opacity flex items-center justify-center mb-4"
               >
                 <FiAward className="mr-2" /> Resume
