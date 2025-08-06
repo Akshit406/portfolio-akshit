@@ -127,8 +127,10 @@ const About = () => {
                     June 2025 - Present (Faridabad, India - Remote)
                   </p>
                   <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
-                    <li>Developed an automated phone call system for an NGO, facilitating monthly pre-recorded reminders to over 10,000 migrant workers.</li>
-                    <li>Engineered the system using PostgreSQL for data, AWS Lambda for call logic, micro EC2 for database hosting, and Twilio API for call functionality.</li>
+                    <li>Designed and implemented a cloud-native automated call system to deliver monthly reminders to over 10,000 migrant workers, improving outreach efficiency for an NGO initiative.</li>
+                    <li>Developed a fault-tolerant AWS Lambda workflow triggered by EventBridge, fetching pending call records from PostgreSQL and marking them as "in progress" before initiating outbound calls.</li>
+                    <li>Integrated Plivo’s voice API to place calls and handle asynchronous callbacks via API Gateway and Lambda, dynamically updating call statuses based on real-time delivery feedback (success, no answer/busy, or permanent failure).</li>
+                    <li>Built a robust retry mechanism using PostgreSQL’s next_retry_time logic and scheduled retry Lambdas, ensuring failed or missed calls are reattempted intelligently without manual intervention.</li>
                   </ul>
                 </div>
 
@@ -142,8 +144,8 @@ const About = () => {
                     September 2023 - February 2024 (Faridabad, India)
                   </p>
                   <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
-                    <li>Contributed to the full-stack development of decentralized applications (DApps), integrating both frontend and backend components.</li>
-                    <li>Implemented and deployed secure smart contracts utilizing Solidity and Hardhat.</li>
+                    <li>Collaborated with the team on the Alchemix website, contributing to both frontend and backend development, including responsive UI in React.js/Tailwind CSS and server-side logic in Node.js/Express.</li>
+                    <li>Built and deployed ERC-20 and ERC-721 tokens using Solidity and Hardhat, gaining hands-on experience in token standards, smart contract design, and gas optimization.</li>
                     <li>Built scalable web application features using the MERN stack (MongoDB, Express.js, React, Node.js).</li>
                     <li>Enhanced user experience by seamlessly integrating blockchain functionalities with web interfaces.</li>
                   </ul>
