@@ -124,7 +124,7 @@ const About = () => {
                     Python Developer @ Sahas
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                    June 2025 - Present (Faridabad, India - Remote)
+                    June 2025 - Present (Bangalore, India - Remote)
                   </p>
                   <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
                     <li>Designed and implemented a cloud-native automated call system to deliver monthly reminders to over 10,000 migrant workers, improving outreach efficiency for an NGO initiative.</li>
@@ -141,12 +141,12 @@ const About = () => {
                     Fullstack Developer @ Blockdudes
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                    September 2023 - February 2024 (Faridabad, India)
+                    September 2024 - February 2025 (Faridabad, India)
                   </p>
                   <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
                     <li>Collaborated with the team on the Alchemix website, contributing to both frontend and backend development, including responsive UI in React.js/Tailwind CSS and server-side logic in Node.js/Express.</li>
                     <li>Built and deployed ERC-20 and ERC-721 tokens using Solidity and Hardhat, gaining hands-on experience in token standards, smart contract design, and gas optimization.</li>
-                    <li>Built scalable web application features using the MERN stack (MongoDB, Express.js, React, Node.js).</li>
+                    <li>Integrated Ethers.js to enable wallet connectivity, real-time on-chain data retrieval, and seamless smart contract interactions across the dApp.</li>
                     <li>Enhanced user experience by seamlessly integrating blockchain functionalities with web interfaces.</li>
                   </ul>
                 </div>

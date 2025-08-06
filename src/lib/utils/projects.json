@@ -33,7 +33,7 @@
     "category": "Web3",
     "technologies": ["ERC 721", "IPFS", "Pinata", "Solidity", "Ethers.js", "React.js"],
     "githubUrl": "https://github.com/Akshit406/MintPod",
-    "liveUrl": "#"
+    "liveUrl": "https://mint-pod.vercel.app"
   },
   {
     "title": "HisabPro",
