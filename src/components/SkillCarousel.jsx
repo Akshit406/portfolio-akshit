@@ -56,7 +56,7 @@ const SkillCarousel = () => {
                                 alt={skill.name}
                                 className="w-16 h-16 object-contain"
                             />
-                            <span className="text-base font-semibold text-dark-primary dark:text-light-primary">
+                            <span className="text-base font-semibold text-dark-primary dark:text-light-primary-text">
                                 {skill.name}
                             </span>
                         </div>

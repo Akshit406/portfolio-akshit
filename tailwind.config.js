@@ -14,6 +14,8 @@ export default {
         'light-primary': '#FBFBFB',     // Lightest
         'light-secondary': '#E8F9FF',
         'light-tertiary': '#EEF7FF',    // Lighter light
+        'light-primary-text': '#dddddd',
+        'light-secondary-text': '#cbcbcb',
         'accent': {
           DEFAULT: '#03346E', // Using a dark color as default for consistency
           light: '#E8F9FF',  // light accent

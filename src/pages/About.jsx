@@ -21,10 +21,10 @@ const About = () => {
 
        
           <div className="lg:w-1/2">
-            <h1 className="text-4xl font-bold mb-6 text-dark-primary dark:text-light-primary">
+            <h1 className="text-4xl font-bold mb-6 text-dark-primary dark:text-light-primary-text">
               About Me
             </h1>
-            <div className="space-y-6 text-dark-secondary dark:text-light-secondary">
+            <div className="space-y-6 text-dark-secondary dark:text-light-secondary-text">
               <p className="text-base">
                 I'm a highly motivated and results-oriented Full-Stack Developer with a passion for architecting and implementing robust, user-centric web applications, including advanced decentralized applications (DApps). My expertise lies in translating complex requirements into elegant, efficient, and scalable solutions.
               </p>
@@ -37,36 +37,36 @@ const About = () => {
             </div>
 
             <div className="mt-8">
-              <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary">
+              <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary-text">
                 My Skills
               </h2>
-              <div className="space-y-4 text-dark-secondary dark:text-light-secondary">
+              <div className="space-y-4 text-dark-secondary dark:text-light-secondary-text">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Programming Languages:</h3>
-                  <p className="text-base">JavaScript, Python, Solidity, Java, C Language</p>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Programming Languages:</h3>
+                  <p className="text-base">JavaScript, Python, Solidity, Java, C++ Language</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Web Technologies:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Web Technologies:</h3>
                   <p className="text-base">HTML/CSS, React.js, Node.js, Express.js</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Databases & Data Stores:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Databases & Data Stores:</h3>
                   <p className="text-base">MongoDB, Redis</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Blockchain:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Blockchain:</h3>
                   <p className="text-base">Hardhat, Blockchain Technologies</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Tools & Version Control:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Tools & Version Control:</h3>
                   <p className="text-base">Git, GitHub, VS Code</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Soft Skills:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Soft Skills:</h3>
                   <p className="text-base">Problem-Solving, Teamwork/Collaboration, Communication Skills</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary">Design Tools:</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-dark-primary dark:text-light-primary-text">Design Tools:</h3>
                   <p className="text-base">Adobe Illustrator, Figma</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const About = () => {
               </a>
 
               {/* Contact Details */}
-              <div className="space-y-2 text-dark-secondary dark:text-light-secondary text-sm">
+              <div className="space-y-2 text-dark-secondary dark:text-light-secondary-text text-sm">
                 <p className="flex items-center">
                   <span className="mr-2 text-accent-light dark:text-accent-dark">📞</span>
                   <a href="tel:+919599434696" className="hover:underline">+91 9599434696</a>
@@ -113,20 +113,20 @@ const About = () => {
 
             {/* Professional Timeline */}
             <div className="bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-xl"> 
-              <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary">
+              <h2 className="text-2xl font-bold mb-6 text-dark-primary dark:text-light-primary-text">
                 Professional Timeline
               </h2>
               <div className="space-y-8 ">
                 {/* Sahas Internship */}
                 <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-700"> 
                   <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-accent-dark dark:bg-accent-light flex items-center justify-center text-white text-xs font-bold"></div> 
-                  <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary">
+                  <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary-text">
                     Python Developer @ Sahas
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
                     June 2025 - Present (Faridabad, India - Remote)
                   </p>
-                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary space-y-1 text-sm">
+                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
                     <li>Developed an automated phone call system for an NGO, facilitating monthly pre-recorded reminders to over 10,000 migrant workers.</li>
                     <li>Engineered the system using PostgreSQL for data, AWS Lambda for call logic, micro EC2 for database hosting, and Twilio API for call functionality.</li>
                   </ul>
@@ -135,13 +135,13 @@ const About = () => {
                 {/* Blockdudes Internship */}
                 <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-700"> 
                   <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-accent-dark dark:bg-accent-light flex items-center justify-center text-white text-xs font-bold"></div> 
-                  <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary">
+                  <h3 className="text-xl font-bold text-dark-primary dark:text-light-primary-text">
                     Fullstack Developer @ Blockdudes
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
                     September 2023 - February 2024 (Faridabad, India)
                   </p>
-                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary space-y-1 text-sm">
+                  <ul className="list-disc list-inside text-dark-secondary dark:text-light-secondary-text space-y-1 text-sm">
                     <li>Contributed to the full-stack development of decentralized applications (DApps), integrating both frontend and backend components.</li>
                     <li>Implemented and deployed secure smart contracts utilizing Solidity and Hardhat.</li>
                     <li>Built scalable web application features using the MERN stack (MongoDB, Express.js, React, Node.js).</li>

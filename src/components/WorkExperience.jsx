@@ -53,7 +53,7 @@ const WorkExperience = () => {
 
           {/* Experience Card */}
           <div className="bg-white dark:bg-dark-secondary shadow-xl rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
-            <h3 className="text-xl font-semibold text-dark-primary dark:text-light-primary mb-1">{exp.title}</h3>
+            <h3 className="text-xl font-semibold text-dark-primary dark:text-light-primary-text mb-1">{exp.title}</h3>
             <p className="text-accent-dark dark:text-accent-light font-medium">{exp.company}</p>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{exp.period}</p>
             {exp.description}

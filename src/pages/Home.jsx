@@ -89,10 +89,10 @@ const Home = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-8 py-5 md:py-24 md:px-4 flex flex-col md:flex-row items-center">
           <motion.div variants={fadeInLeft} className="md:w-1/2 mb-8 md:mb-0 ">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-dark-primary dark:text-light-primary-text">
               Full Stack Developer, Web3 Builder & Sleepless Debugger 
             </h2>
-            <p className="text-md md:text-lg font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary">
+            <p className="text-md md:text-lg font-normal mb-0 mt-2 text-dark-secondary dark:text-light-secondary-text">
                 Hey I'm Akshit Saxena, I architect efficient web systems and trustless DApps, turning complex challenges into intuitive, performant software.
             </p>
 
@@ -157,7 +157,7 @@ const Home = () => {
 
         {/* Projects Section */}
         <motion.section variants={containerVariants} className="container md:px-4 mx-auto px-8 sm:px-6 py-12">
-          <motion.h2 variants={fadeInLeft} className="text-3xl font-bold mb-8 text-center text-dark-primary dark:text-light-primary">
+          <motion.h2 variants={fadeInLeft} className="text-3xl font-bold mb-8 text-center text-dark-primary dark:text-light-primary-text">
             Featured Projects
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,7 +188,7 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <motion.h2
               variants={fadeInLeft}
-              className="text-3xl font-bold mb-4 text-center text-dark-primary dark:text-light-primary"
+              className="text-3xl font-bold mb-4 text-center text-dark-primary dark:text-light-primary-text"
             >
               Skills
             </motion.h2>
@@ -200,7 +200,7 @@ const Home = () => {
 
         {/* Work Experience */}
         <motion.section variants={containerVariants} className="container mx-auto md:px-4 px-8 py-12">
-          <motion.h2 variants={fadeInLeft} className="text-3xl font-bold mb-8 text-center text-dark-primary dark:text-light-primary">
+          <motion.h2 variants={fadeInLeft} className="text-3xl font-bold mb-8 text-center text-dark-primary dark:text-light-primary-text">
             Work Experience
           </motion.h2>
           <motion.div variants={fadeInLeft}>

@@ -46,7 +46,7 @@ const ProjectCard = ({ project, delay }) => {
 
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold mb-2 text-dark-primary dark:text-light-primary">
+        <h3 className="text-xl font-bold mb-2 text-dark-primary dark:text-light-primary-text">
           {project.title}
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">

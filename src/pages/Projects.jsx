@@ -11,10 +11,10 @@ const Projects = () => {
       className="pt-16 pb-20 md:pb-16 px-4"
     >
       <div className="container mx-auto pt-0 sm:py-12">
-        <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary">
+        <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary-text">
           My Projects
         </h1>
-        <p className="text-lg text-center max-w-2xl mx-auto mb-12 text-dark-secondary dark:text-light-secondary">
+        <p className="text-lg text-center max-w-2xl mx-auto mb-12 text-dark-secondary dark:text-light-secondary-text">
           Here's a collection of my recent work. Each project represents unique challenges and creative solutions.
         </p>
 

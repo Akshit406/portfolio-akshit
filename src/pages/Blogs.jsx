@@ -13,10 +13,10 @@ const Blogs = () => {
       className="pt-16 pb-20 md:pb-16 px-4"
     >
       <div className="container pt-0 mx-auto sm:py-12">
-        <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary">
+        <h1 className="text-4xl font-bold text-center mb-4 text-dark-primary dark:text-light-primary-text">
           My Blog
         </h1>
-        <p className="text-lg text-center max-w-2xl mx-auto mb-12 text-dark-secondary dark:text-light-secondary">
+        <p className="text-lg text-center max-w-2xl mx-auto mb-12 text-dark-secondary dark:text-light-secondary-text">
           Thoughts, tutorials, and insights about web development, blockchain, and technology.
         </p>
 
@@ -52,7 +52,7 @@ const Blogs = () => {
                     <FiClock className="mr-2" />
                     <span>{blog.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-dark-primary dark:text-light-primary">
+                  <h3 className="text-xl font-bold mb-2 text-dark-primary dark:text-light-primary-text">
                     {blog.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
