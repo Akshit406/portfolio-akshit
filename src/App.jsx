@@ -8,10 +8,12 @@ import Blogs from './pages/Blogs';
 import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router basename="/">
+      <ScrollToTop/>
       <div className="flex flex-col min-h-screen relative z-0">
         <Navbar />
         
