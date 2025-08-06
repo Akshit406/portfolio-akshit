@@ -5,12 +5,12 @@ const experiences = [
     id: 1,
     title: 'Python Developer',
     company: 'Sahas',
-    period: 'June 2025 – Present (Faridabad, India - Remote)',
+    period: 'June 2025 – Present (Bangalore, India - Remote)',
     description: (
       <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
-        <li>Built an automated calling system to deliver monthly reminders to 10,000+ migrant workers.</li>
-        <li>Used AWS Lambda and Twilio for serverless call workflows.</li>
-        <li>Managed recipient data securely via PostgreSQL hosted on a micro EC2 instance.</li>
+        <li>Designed and implemented a cloud-native automated call system to deliver monthly reminders to over 10,000 migrant workers, improving outreach efficiency for an NGO initiative.</li>
+        <li>Developed a fault-tolerant AWS Lambda workflow triggered by EventBridge, fetching pending call records from PostgreSQL and marking them as "in progress" before initiating outbound calls.</li>
+        <li>Integrated Plivo’s voice API to place calls and handle asynchronous callbacks via API Gateway and Lambda, dynamically updating call statuses based on real-time delivery feedback (success, no answer/busy, or permanent failure)</li>
       </ul>
     ),
   },
@@ -18,12 +18,12 @@ const experiences = [
     id: 2,
     title: 'Full Stack Developer',
     company: 'Blockdudes',
-    period: 'September 2023 – February 2024 (Faridabad, India)',
+    period: 'September 2024 – February 2025 (Faridabad, India)',
     description: (
       <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
-        <li>Developed and deployed smart contracts using Solidity and Hardhat.</li>
-        <li>Built responsive React.js frontends with wallet integration via Ethers.js.</li>
-        <li>Connected IPFS-based NFT metadata to backend APIs built with Node.js + Express.</li>
+        <li>Collaborated with the team on the Alchemix website, contributing to both frontend and backend development, including responsive UI in React.js/Tailwind CSS and server-side logic in Node.js/Express.</li>
+        <li>Built and deployed ERC-20 and ERC-721 tokens using Solidity and Hardhat, gaining hands-on experience in token standards, smart contract design, and gas optimization.</li>
+        <li>Integrated Ethers.js to enable wallet connectivity, real-time on-chain data retrieval, and seamless smart contract interactions across the dApp.</li>
       </ul>
     ),
   },
