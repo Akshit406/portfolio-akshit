@@ -79,7 +79,7 @@ const About = () => {
              
               <div className="flex justify-center mb-6">
                 <img
-                  src="./AkshitPFP.png" 
+                  src="./AkshitPFP.jpg" 
                   alt="Akshit Saxena"
                   className="w-80 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" 
                 />
